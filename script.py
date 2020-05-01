@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import os 
+import os, sys
 
 def shutdown():  
 	shutdown = input("Do you wish to shutdown your computer ? (Y / N): ") 
@@ -27,4 +27,4 @@ def logout():
 		os.system("shutdown -l")
 
 if __name__ == "__main__":
-	shutdown()
+	globals()[sys.argv[1]]()
