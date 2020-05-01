@@ -1,13 +1,13 @@
 #!/bin/bash
 
-function shutdown() {
+function shutdown {
     python -c 'import script; script.shutdown()'
 }
 
-function restart(){
+function restart {
     python -c 'import script; script.restart()'
 }
 
-function logout(){
+function logout {
     python -c 'import script; script.logout()'
 }
