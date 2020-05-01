@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os 
 
 def shutdown():  
@@ -7,6 +9,22 @@ def shutdown():
 		exit()
 	else: 
 		os.system("shutdown /s /t 1")
+
+def restart():
+	restart = input("Do you wish to restart your computer ? (Y / N): ") 
+
+	if restart == 'N': 
+		exit()
+	else: 
+		os.system("shutdown /r /t 1")
+
+def logout():
+	logout = input("Do you wish to logout your computer ? (Y / N): ") 
+	
+	if logout == 'N': 
+		exit()
+	else: 
+		os.system("shutdown -l")
 
 if __name__ == "__main__":
 	shutdown()
